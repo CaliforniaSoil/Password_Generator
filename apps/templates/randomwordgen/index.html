@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href={% static "randomwordgen/CSS/style.css" %}>
+    <meta charset="UTF-8">
+    <title>Random Word Generator</title>
+</head>
+<body>
+    <div class="random">
+        <p>Heres a random word:</p>
+        {{random_word}}
+    </div>
+    <div>
+        <button action="('/')" value="Generate"></button>
+    </div>
+</body>
+</html>
